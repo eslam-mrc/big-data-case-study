@@ -1,7 +1,7 @@
 # big-data-case-study
 Hello there!
 This is, like the name suggests, a big data case study. This is an integration of Kafka, Spark, HDFS, Hive and Power BI. The main theme is to listen to what people are saying about a certain brand, trend or hashtag, do simple sentiment analysis on the tweets then reply accordingly and appropriately. After that, we save the data for further analysis.
-The pipeline goes like this:
+The pipeline goes like as follows:
  - First, we gather data from twitter using the Twitter API.
  - Then we send the stream of data to Spark using Kafka.
  - After that we do some simple sentiment analysis on Spark, reply to the tweets and save parquet files to HDFS.
