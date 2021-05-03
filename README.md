@@ -12,4 +12,6 @@ In this repository you will find:
  - A simple script to check Kafka's status.
  - The ODBC driver for connecting Hive with Power BI.
  - A walkthrough in the setup of this project.
+
+
 Feel free to contact me if you have got any inquiries.
