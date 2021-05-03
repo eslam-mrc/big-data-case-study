@@ -6,6 +6,7 @@ The pipeline goes like as follows:
  - Then we send the stream of data to Spark using Kafka.
  - After that we do some simple sentiment analysis on Spark, reply to the tweets and save parquet files to HDFS.
  - Finally, we store the data in a Hive table to be loaded by Microsoft Power BI for analysis and visualization.
+
 In this repository you will find:
  - The producer and consumer scripts.
  - A simple script to check Kafka's status.
