@@ -1,5 +1,5 @@
 # Walkthrough
-This is more of a description of the setup that I ran this project on in addition to some prerequisites and a walkthrough on how to make your own setup and run the project.
+This is more of a description of the setup that I ran this project on, in addition to some prerequisites and a walkthrough on how to make your own setup and run the project.
 
 ### My PC's specs:
 - Windows 10 x64
@@ -113,7 +113,7 @@ This is more of a description of the setup that I ran this project on in additio
 
 	![Python Streaming Kafka Producer](screens/001-python-kafka-producer.jpg)
 	
-	![Python Streaming Kafka Producer](screens/002-pyspark-consumer.jpg)
+	![Pyspark Consumer](screens/002-pyspark-consumer.jpg)
 
 
 - To connect Power Bi to hive, download the ODBC (the one I attached is for the x64 Windows version, if you're running x32 you will have to download the x32 ODBC driver)
@@ -121,6 +121,11 @@ This is more of a description of the setup that I ran this project on in additio
 - In the start menu, type ODBC then choose "ODBC Data Sources"
 
 - Choose "Add" then choose "Cloudera ODBC Driver for Apache Hive". Click "Finish"
+
+	![Add User DSN](screens/add-user-dsn.jpg)
+	
+	![Choose Driver](screens/choose-driver.png)
+
 
 - A new window will appear. In the Data Source box type "hive"
 
@@ -130,14 +135,23 @@ This is more of a description of the setup that I ran this project on in additio
 
 - In the Hive Server Type dropdown menu choose "Hive Server2"
 
-- In the Authentication Mechanism choose "Username" and in the User Name box type "hive"
+- In the Authentication Mechanism choose "Username and Password" and in the User Name box type "root" and in the Password box type your password (the one you changed when you first opened MobaXterm or "hadoop" if you haven't changed it).
 
-- Test the connection and click "Ok".
+- Test the connection and click "Ok". If the connection fails, in the Authentication Mechanism choose "Username" and in the User Name box type "hive". This should work.
+
+	![Connection Properties](screens/conn-details.jpg)
 
 - Open Power Bi Desktop.
 
 - Choose "Get Data" then choose "ODBC". After that choose a data source "hive" and it will start previewing what you have in database "test".
 
+	![Power Bi Get Data](screens/get-data.jpg)
+	
+	![Power Bi Data Source Name](screens/data-source-name.jpg)
+
 - And voila! Happy Dashboards!
+
+	![Power Bi Sample Dashboard](screens/sample-dashboard.jpg)
+
 
 
