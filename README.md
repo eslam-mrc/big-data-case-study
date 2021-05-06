@@ -10,7 +10,7 @@ This is, like the name suggests, a big data case study. This is an integration o
 
 ### In this repository you will find:
  - The producer and consumer scripts.
- - A simple script to check Kafka's status.
+ - A simple script to check the services using the Ambari-REST API.
  - The ODBC driver for connecting Hive with Power BI.
  - A walkthrough in the setup of this project.
 
