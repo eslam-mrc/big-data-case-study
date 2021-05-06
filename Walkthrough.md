@@ -43,7 +43,7 @@ At least 70GB of free space
 - I tried working my way around with the installed versions on HDP (Kafka 1.1.1 | Spark 2.3.1) but I kept getting version comptability errors [My code worked just fine on Windows and on a Centos7 virtual machine where I downloaded (Kafka_2.11-2.3.1 | Spark 2.4.7 | Scala 2.11), that's why I knew it's a version comptability issue]. Also the HDP comes with python2.7 as the main python, which is pain in the @ss.
 
 - So, I made a virtual environment using python3.6 (which is already on HDP) and I installed what I needed in there:
-	python3.6 -m venv ./<name of your virtual environment>
+	- python3.6 -m venv ./<name of your virtual environment>
 
 - Activate the virtual environment
 	source <name of your virtual environment>/bin/activate
