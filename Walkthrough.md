@@ -111,9 +111,9 @@ This is more of a description of the setup that I ran this project on in additio
 
 - The producer and consumer should look something like this:
 
-	[![Python Streaming Kafka Producer](E:\ITI\Courses\Big Data Use Case\001-python-kafka-producer.jpg)](https://drive.google.com/file/d/18iz4LJn_Xg43UiSfRoLljvSWGgRCWRbN/view?usp=sharing)
-
-	[![Pyspark Consumer](E:\ITI\Courses\Big Data Use Case\002-pyspark-consumer.jpg)](https://drive.google.com/file/d/1L5vDfFVOBonvz1KdaIbEL3nq6XOOupFb/view?usp=sharing)
+	![Python Streaming Kafka Producer](screens/001-python-kafka-producer.jpg)
+	
+	![Python Streaming Kafka Producer](screens/002-pyspark-consumer.jpg)
 
 
 - To connect Power Bi to hive, download the ODBC (the one I attached is for the x64 Windows version, if you're running x32 you will have to download the x32 ODBC driver)
