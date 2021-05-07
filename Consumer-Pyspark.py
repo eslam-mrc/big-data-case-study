@@ -103,8 +103,12 @@ def extract(row):
 # to actually perform these steps and return a list of dictionaries that will be passed to the saveParquet function.
 def handler(rdd):
     if not rdd.isEmpty():
-        listDict = rdd.map(lambda row: extract(row)).collect()
-        saveParquet(listDict)
+        try:
+            listDict = rdd.map(lambda row: extract(row)).collect()
+            saveParquet(listDict)
+        except:
+            print("There was an error deserializing a tweet")
+            pass
 
 
 kafkaStream.foreachRDD(handler)
