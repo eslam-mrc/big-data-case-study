@@ -57,9 +57,9 @@ producer = KafkaProducer(bootstrap_servers=['sandbox-hdp.hortonworks.com:6667'],
 #I'm simulating the stream using while true
 #I looked for the tweepy StreamListener way, the status object it returns has fewer attributes
 while True:
-    #tweets is an iterable object that contains stuff like the text of the tweet, who sent the tweet, date and more
-    tweets = tw.Cursor(api.search, q=new_search, lang="en", since=date_since).items()
     try:
+        #tweets is an iterable object that contains stuff like the text of the tweet, who sent the tweet, date and more
+        tweets = tw.Cursor(api.search, q=new_search, lang="en", since=date_since).items()
         for tweet in tweets:
             #Checking whether we replied to this tweet before or not
             if tweet.id_str not in tweetsAlreadyRead:
