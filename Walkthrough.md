@@ -151,7 +151,7 @@ This is more of a description of the setup that I ran this project on, in additi
 
 - And voila! Happy Dashboards!
 
-	
+	![Power Bi Sample Dashboard](screens/sample-dashboard.jpg)
 
 
 
