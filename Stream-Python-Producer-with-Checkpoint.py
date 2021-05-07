@@ -8,10 +8,10 @@ import jsonpickle
 
 
 #Twitter API credentials you get when you create an app
-consumerKey = 'mKsFq1R9BtlOm2mSKTwooawLY'
-consumerSecret = 'Gz3TOrY4rJbHJ9bL2ZY0tYQ45uo9G0rTtiBjqOKY98RDv0HuNl'
-accessToken = '1382429766624612359-Q1y5Q3doTkrJdp5631O7gJoE8JYFPD'
-accessTokenSecret = '5IXpncmoUa9tktwgKHXYYXOn2egvRsedncPU7aGR2Z88e'
+consumerKey = 'mKsFq1 . . . . . . . . . . .oawLY'
+consumerSecret = 'Gz3TOr . . . . . . . . . . . . . . 8RDv0HuNl'
+accessToken = '13824 . . . . . . . . . . . . . . . . . . . gJoE8JYFPD'
+accessTokenSecret = '5IXpncm . . . . . . . . . . . . . . . . . U7aGR2Z88e'
 
 #Create the authentication object
 authenticate = tw.OAuthHandler(consumerKey, consumerSecret)
